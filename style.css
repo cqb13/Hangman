@@ -97,10 +97,9 @@ body {
   #stats-title{
     position: absolute;
     top: 5px;
-    left: 40%;
+    left: 35%;
     font-size: 30px;
   }
-
 
   .stats-area {
     display: block;
@@ -150,7 +149,7 @@ body {
     max-width: 300px;
     padding: 10px;
     color: rgb(73, 107, 190);
-    background-color: rgba(68, 68, 68, 70);
+    background-color: #333;
   }
 
   /* general element themes */
