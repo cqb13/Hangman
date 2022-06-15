@@ -12,18 +12,37 @@
   <a href='https://github.com/cqb13' target="_blank"><button id="github-link" class="button">Github</button></a>
   <button id="help-button" class="button">How To Play?</button>
 
-  <div class="stats-area" id="stats">
-    <form class="stats-container">
+  <div class="stats-area1" id="stats">
+    <form class="info-container">
       <strong id="stats-title" class="label">Stats</strong>
       <br>
-      <p id="stats-word-length" class="stats-container">- Word Length: N/A</p>
-      <p id="stats-guesses" class="stats-container">- Guesses: 0</p>
-      <p id="stats-lives" class="stats-container">- Lives: N/A</p>
+      <p id="stats-word-length" class="info-container">- Word Length: N/A</p>
+      <p id="stats-guesses" class="info-container">- Guesses: 0</p>
+      <p id="stats-lives" class="info-container">- Lives: N/A</p>
+    </form>
+  </div>
 
-      <p id="stats-wins" class="stats-container">- Wins: 0</p>
-      <p id="stats-losses" class="stats-container">- Losses: 0</p>
-      <p id="stats-ratio" class="stats-container">- Win/Loose Ratio: 0</p>
+  <div class="stats-area2" id="stats">
+    <form class="info-container">
+      <strong id="stats-title" class="label">Stats</strong>
+      <br>
+      <p id="stats-wins" class="info-container">- Wins: 0</p>
+      <p id="stats-losses" class="info-container">- Losses: 0</p>
+      <p id="stats-ratio" class="info-container">- Win/Loose Ratio: 0</p>
+    </form>
+  </div>
 
+  <div class="options-area" id="options">
+    <form class="info-container">
+      <strong id="stats-title" class="label">Options</strong>
+      <br>
+      <p>Please select a difficulty:</p>
+      <input type="radio" id="hard-mode" name="mode_selection" value="Hard">
+      <label for="hard-mode">Hard</label><br>
+      <input type="radio" id="normal-mode" name="mode_selection" value="Normal" checked="True">
+      <label for="normal-mode">Normal</label><br>
+      <input type="radio" id="easy-mode" name="mode_selection" value="Easy">
+      <label for="easy-mode">Easy</label>
     </form>
   </div>
 
@@ -36,13 +55,13 @@
   </form>
 
   <div class="help-popup" id="help">
-    <form class="help-container">
-      <strong id="help-title" class="label">Help</strong>
+    <form class="info-container">
+      <strong id="help-title" class="label">How To Play</strong>
       <br>
-      <p id="help-text-1" class="help-container">- Enter a letter in the input field at the bottom of the screan.</p>
-      <p id="help-text-2" class="help-container">- Press the guess button or the enter key on your keyboard to submit your guess.</p>
-      <p id="help-text-2" class="help-container">- If your guess is in the word, it will replace a dashed line in the hidden word.</p>
-      <p id="help-text-2" class="help-container">- If your guess is not in the word, you will loose a life. You only have 12 lives.</p>
+      <p id="help-text-1" class="info-container">- Enter a letter in the input field at the bottom of the screan.</p>
+      <p id="help-text-2" class="info-container">- Press the guess button or the enter key on your keyboard to submit your guess.</p>
+      <p id="help-text-2" class="info-container">- If your guess is in the word, it will replace a dashed line in the hidden word.</p>
+      <p id="help-text-2" class="info-container">- If your guess is not in the word, you will loose a life. You only have 12 lives.</p>
       <br>
       <button id="close-button" class="button">Close</button>
     </form>
