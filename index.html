@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script defer src="script.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <strong id="title" class = label>Hangman</strong>
+  <a href='https://github.com/cqb13' target="_blank"><button id="github-link" class="button">Github</button></a>
+  <button id="help-button" class="button">How To Play?</button>
+
+  <div class="stats-area" id="stats">
+    <form class="stats-container">
+      <strong id="stats-title" class="label">Stats</strong>
+      <br>
+      <p id="stats-word-length" class="stats-container">- Word Length: N/A</p>
+      <p id="stats-guesses" class="stats-container">- Guesses: 0</p>
+      <p id="stats-lives" class="stats-container">- Lives: N/A</p>
+
+      <p id="stats-wins" class="stats-container">- Wins: 0</p>
+      <p id="stats-losses" class="stats-container">- Losses: 0</p>
+      <p id="stats-ratio" class="stats-container">- Win/Loose Ratio: 0</p>
+
+    </form>
+  </div>
+
+  <div id="game-container"></div>
+  <p id="word-view" class="label">Word</p>
+  <p id="used-letters" class="label">Used Letters</p>
+  <form id="guess-container">
+    <input type="text" id="guess-input" placeholder="Enter a letter">
+    <button type="guess" id="guess-button" class="button">Guess</button>
+  </form>
+
+  <div class="help-popup" id="help">
+    <form class="help-container">
+      <strong id="help-title" class="label">Help</strong>
+      <br>
+      <p id="help-text-1" class="help-container">- Enter a letter in the input field at the bottom of the screan.</p>
+      <p id="help-text-2" class="help-container">- Press the guess button or the enter key on your keyboard to submit your guess.</p>
+      <p id="help-text-2" class="help-container">- If your guess is in the word, it will replace a dashed line in the hidden word.</p>
+      <p id="help-text-2" class="help-container">- If your guess is not in the word, you will loose a life. You only have 12 lives.</p>
+      <br>
+      <button id="close-button" class="button">Close</button>
+    </form>
+  </div>
+
+</body>
+</html>
