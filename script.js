@@ -6,12 +6,13 @@ const helpButton = document.getElementById("help-button");
 const playButton = document.getElementById("play-button");
 const guess = document.getElementById("guess-input");
 
-let word;
-let mode;
-let lives;
-let hiddenWord;
-let guesses = 0;
 let usedLetters = [];
+let valid = true;
+let guesses = 0;
+let hiddenWord;
+let lives;
+let mode;
+let word;
 
 // utility controls
 helpButton.addEventListener("click", function(){
@@ -23,6 +24,7 @@ closeHelpBUtton.addEventListener("click", function(){
 })
 
 // game controls
+// TODO add a warning windo that tells you your game will be lost if you press play while guesses is greater than 0.
 playButton.addEventListener("click", function(){
     start();
 });
@@ -31,6 +33,7 @@ guessButton.addEventListener("click", function(){
     game();
 });
 
+// TODO: something is very wrong with all this code, page reloads every time enter is pressed
 guess.addEventListener('keypress', (event) => {
     if(event.key == "Enter"){
         game();
@@ -85,6 +88,26 @@ function wordReplace(){
     document.getElementById("word-view").innerHTML = hiddenWord;
 }
 
-function game() {
+// controls the flow of the game
+function game(){
+    validGuess(valid)
+    if (valid != false){
+        guesses += 1;
+        usedLetters.push(guess.value);
+        console.log(usedLetters);
+    }
+    document.getElementById("stats-guesses").innerHTML = "- Guesses: " + guesses;
+    valid = true;
     wordReplace();
+}
+
+function validGuess(valid){
+    if ((guess.value).length == 1){
+        for (var i = 0; i < usedLetters.length; i++){
+            if (guess == usedLetters[i]){
+              valid = false;
+              return valid;
+            }
+        }
+    }
 }
