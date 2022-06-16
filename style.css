@@ -113,6 +113,7 @@ body {
   .stats-area1 {
     display: block;
     position: absolute;
+    width: 170px;
     bottom: 30%;
     left: 20%;
     border: 2px solid rgb(73, 107, 190);
@@ -123,6 +124,7 @@ body {
   .stats-area2 {
     display: block;
     position: absolute;
+    width: 170px;
     bottom: 30%;
     right: 20%;
     border: 2px solid rgb(73, 107, 190);
