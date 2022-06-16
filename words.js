@@ -1,4 +1,4 @@
-const LIST = [
+export const Words = [
     "abandoned",
     "aberdeen",
     "abilities",

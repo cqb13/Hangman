@@ -41,6 +41,15 @@ body {
     font-size: 20px;
   }
 
+  #play-button{
+    position: absolute;
+    left: 40.5%;
+    top: 20%;
+    text-align: center;
+    width: 300px;
+    font-size: 50px;
+  }
+
   #word-view{
     position: absolute;
     text-align: center;
@@ -151,6 +160,7 @@ body {
   .help-popup {
     display: none;
     position: absolute;
+    width: 300px;
     bottom: 30%;
     left: 40%;
     border: 2px solid rgb(73, 107, 190);
