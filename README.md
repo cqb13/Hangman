@@ -1,7 +1,7 @@
 <div align="center">
   <!-- Logo and Title -->
   <h1>Hangman</h1>
-  <p>This project is ment for me to properly learn html and CSS. And how to host and run websites</p>
+  <p>A simple website to play hangman on</p>
 
 <!-- Fancy badges -->
 <img src="https://img.shields.io/github/languages/code-size/cqb13/Hangman" alt="Code Size">
@@ -11,10 +11,10 @@
 <hr />
 
 ## Features 
-- None yet
+- Hangman with 3 modes (word length and lives differ for each  mode)
 
 ## Plans
-- Hangman with 3 modes (word length and lives differ for each  mode)
+- option to guess the full word
 - Language options for words (be able to use words for different preset languages, maybe use google translate for more languages)
 - Store stats from your old games to give you total wins, total losses and a win loose ratio
 - Option to upload your own words file to use
