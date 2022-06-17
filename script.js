@@ -5,6 +5,8 @@ const guessButton = document.getElementById("guess-button");
 const helpButton = document.getElementById("help-button");
 const playButton = document.getElementById("play-button");
 const guess = document.getElementById("guess-input");
+const yes = document.getElementById("new-game-yes");
+const no = document.getElementById("new-game-no");
 
 let endCondition = 0;
 let usedLetters = [];
@@ -25,6 +27,14 @@ closeHelpBUtton.addEventListener("click", function(){
     document.getElementById("help").style.display = "none";
 })
 
+yes.addEventListener("click", function(){
+    start();
+});
+
+no.addEventListener("click", function(){
+
+})
+
 // game controls
 // TODO add a warning window that tells you your game will be lost if you press play while guesses is greater than 0.
 playButton.addEventListener("click", function(){
@@ -35,10 +45,10 @@ guessButton.addEventListener("click", function(){
     game();
 });
 
-// FIX: something is very wrong with all this code, page reloads every time enter is pressed
 /**
- * website is reloaded and all stats and words are cleared
- * need to do some testing
+ * website is reloaded when any button from the popup window is pressed
+ * idk how to fix, maybe offical way to make popup window???
+ * maybe save all data when 1 of the windows is opend then load it after???
 */
 guess.addEventListener('keypress', (event) => {
     if(event.key == "Enter"){
@@ -137,9 +147,9 @@ function gameOver() {
     if (endCondition == 0){
         endCondition = "You won!";
     } else if (endCondition = 1){
-        endCondition = "You ran out of lives";
+        endCondition = "Out of lives :(";
     } else if (endCondition = 2){
-        endCondition = "You gussed the wrong word";
+        endCondition = "Wrong guess :(";
     } else {
         endCondition = "You gave up";
     }

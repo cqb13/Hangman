@@ -55,6 +55,22 @@
     <button type="button" id="guess-button" class="button">Guess</button>
   </form>
 
+  <div class="new-game-popup" id="new-game">
+    <form class="info-container">
+      <strong id="new-game-title" class="label">WARNING!</strong>
+      <br>
+      <p id="new-game-msg-1" class="info-container">If you press this a new game will start!</p>
+      <p id="new-game-msg-2" class="info-container">Your stats wont save!</p>
+      <p id="new-game-msg-3" class="info-container">Are you sure you want to start a new game</p>
+      <br>
+      <input type="checkbox" id="new-game-stop" name="warning-stop" value="not again">
+      <label for="new-game-stop">Dont show again</label>
+      <br>
+      <button id="new-game-yes" class="button">Yes</button>
+      <button id="new-game-No" class="button">No</button>
+    </form>
+  </div>
+
   <div class="end-game-popup" id="game-over">
     <form class="info-container">
       <strong id="game-over-title" class="label">End Of Game Status</strong>

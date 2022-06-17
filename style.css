@@ -159,6 +159,24 @@ body {
   border-radius: 4px;
   z-index: 9;
 }
+/*styles for warning popup */
+#new-game-title{
+  position: absolute;
+  top: 5px;
+  left: 25%;
+  font-size: 30px;
+}
+.new-game-popup {
+  display: block;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 33%;
+  width: 20em;
+  border: 2px solid rgb(73, 107, 190);
+  border-radius: 4px;
+  z-index: 9;
+}
 /*styles for the help popup */
 #close-button{
   position: absolute;
