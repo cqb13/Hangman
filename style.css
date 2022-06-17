@@ -1,262 +1,235 @@
 body {
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    background-color: #333;
-    font-family: 'Times New Roman', Times, serif;
-  }
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #333;
+  font-family: 'Times New Roman', Times, serif;
+}
 
-  /*styles for main game */
-  #game-container {
-    width: 80%;
-    max-width: 1200px;
-  }
-
-  #game-container div {
-    background-color: #333;
-    padding: 5px;
-  }
-
-  #game-container div:nth-child(2n) {
-    background-color: #333;
-  }
-
-  #title {
-    position: fixed;
-    font-size: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    color: rgb(73, 107, 190);
-  }
-
-  #github-link{
-    position: absolute;
-    left: 0px;
-    font-size: 20px;
-  }
-
-  #help-button{
-    position: absolute;
-    right: 0px;
-    font-size: 20px;
-  }
-
-  #play-button{
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    top: 20%;
-    text-align: center;
-    width: 300px;
-    font-size: 50px;
-    border: 2px solid rgb(73, 107, 190);
-  }
-
-  #word-view{
-    position: absolute;
-    text-align: center;
-    bottom: 120px;
-    max-width: 1200px;
-    width: 80%;
-    height: 50px;
-    font-size: 40px;
-    color: rgb(73, 107, 190);
-    border-radius: 4px;
-    border: 1px solid rgb(73, 107, 190);
-    background-color: #444;
-  }
-
-  #used-letters {
-    position: absolute;
-    bottom: 60px;
-    max-width: 1200px;
-    width: 80%;
-    font-size: 30px;
-    color: rgb(73, 107, 190);
-    border-radius: 4px;
-    border: 1px solid rgb(73, 107, 190);
-    background-color: #444;
-  }
-
-  #guess-container {
-    position: fixed;
-    padding-bottom: 30px;
-    bottom: 0;
-    background-color: #333;
-    max-width: 1200px;
-    width: 80%;
-    display: flex;
-  }
-
-  #guess-input {
-    text-align: center;
-    flex-grow: 1;
-    height: 50px;
-    font-size: 30px;
-    font-family: 'Times New Roman', Times, serif;
-    color: rgb(73, 107, 190);
-    background-color: #444;
-    border: 1px solid rgb(73, 107, 190);
-    border-radius: 4px;
-  }
-
-  #guess-button{
-      font-size: 30px;
-  }
-
-  /* styles for stat area */
-  #stats-title{
-    position: absolute;
-    top: 5px;
-    left: 35%;
-    font-size: 30px;
-  }
-
-  .stats-area1 {
-    display: block;
-    position: absolute;
-    width: 170px;
-    bottom: 30%;
-    left: 20%;
-    border: 2px solid rgb(73, 107, 190);
-    border-radius: 4px;
-    z-index: 9;
-  }
-
-  .stats-area2 {
-    display: block;
-    position: absolute;
-    width: 170px;
-    bottom: 30%;
-    right: 20%;
-    border: 2px solid rgb(73, 107, 190);
-    border-radius: 4px;
-    z-index: 9;
-  }
-
-  .options-area {
-    display: block;
-    position: absolute;
-    width: 400px;
-    bottom: 30%;
-    left: 37%;
-    border: 2px solid rgb(73, 107, 190);
-    border-radius: 1px;
-    z-index: 9;
-  }
-  /*styles for the game over popup */
-  #end-close-button{
-    position: absolute;
-    bottom: 5px;
-    left: 40%;
-    font-size: 20px;
-  }
-
-  #game-over-title{
-    position: absolute;
-    text-align: center;
-    top: 5px;
-    left: 25%;
-    font-size: 30px;
-  }
-
-  .end-game-popup {
-    display: none;
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    bottom: 33%;
-    width: 20em;
-    border: 2px solid rgb(73, 107, 190);
-    border-radius: 4px;
-    z-index: 9;
-  }
-  
-  /*styles for the help popup */
-  #close-button{
-    position: absolute;
-    bottom: 5px;
-    left: 40%;
-    font-size: 20px;
-  }
-
-  #help-title{
-    position: absolute;
-    top: 5px;
-    left: 25%;
-    font-size: 30px;
-  }
-
-
-  .help-popup {
-    display: none;
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    bottom: 33%;
-    width: 20em;
-    border: 2px solid rgb(73, 107, 190);
-    border-radius: 4px;
-    z-index: 9;
-  }
-
-  /* general element themes */
-  .button{
-    font-family: 'Times New Roman', Times, serif;
-    color: rgb(73, 107, 190);
-    background-color: #444;
-    border: 1px solid rgb(73, 107, 190);
-    border-radius: 4px;
-  }
-
-  button:hover{
-    opacity: 0.9;
-  }
-
-  .label{
-    font-family: 'Times New Roman', Times, serif;
-    color: rgb(73, 107, 190);
-    text-align: center;
-  }
-
-  .info-container {
-    max-width: 500px;
-    padding: 10px;
-    color: rgb(73, 107, 190);
-    background-color: #444;
-  }
-
-  input[type="radio"] {
-    appearance: none;
-    background-color: #444;
-    margin: 3.5px;
-    font: inherit;
-    color: currentColor;
-    width: 1.15em;
-    height: 1.15em;
-    border-radius: 4px;
-    border: 0.15em double currentColor;
-    transform: translateY(-0.075em);
-    display: grid;
-    place-content: center;
-  }
-
-  input[type="radio"]::before {
-    content: "";
-    width: 0.65em;
-    height: 0.65em;
-    transform: scale(0);
-    transition: 120ms transform ease-in-out;
-    background-color: rgb(73, 107, 190);
-  }
-
-  input[type="radio"]:checked::before {
-    transform: scale(1);
-  }
-
-  .form-control + .form-control {
-    margin-top: 1em;
-  }
-  
+/*styles for main game */
+#game-container {
+  width: 80%;
+  max-width: 1200px;
+}
+#game-container div {
+  background-color: #333;
+  padding: 5px;
+}
+#game-container div:nth-child(2n) {
+  background-color: #333;
+}
+#title {
+  position: fixed;
+  font-size: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  color: rgb(73, 107, 190);
+}
+#github-link{
+  position: absolute;
+  left: 0px;
+  font-size: 20px;
+}
+#help-button{
+  position: absolute;
+  right: 0px;
+  font-size: 20px;
+}
+#play-button{
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  top: 20%;
+  text-align: center;
+  width: 300px;
+  font-size: 50px;
+  border: 2px solid rgb(73, 107, 190);
+}
+#word-view{
+  position: absolute;
+  text-align: center;
+  bottom: 120px;
+  max-width: 1200px;
+  width: 80%;
+  height: 50px;
+  font-size: 40px;
+  color: rgb(73, 107, 190);
+  border-radius: 4px;
+  border: 1px solid rgb(73, 107, 190);
+  background-color: #444;
+}
+#used-letters {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 9.5%;
+  max-width: 1200px;
+  width: 80%;
+  height: 40px;
+  font-size: 30px;
+  color: rgb(73, 107, 190);
+  border-radius: 4px;
+  border: 1px solid rgb(73, 107, 190);
+  background-color: #444;
+}
+#guess-container {
+  position: fixed;
+  padding-bottom: 30px;
+  bottom: 0;
+  background-color: #333;
+  max-width: 1200px;
+  width: 80%;
+  display: flex;
+}
+#guess-input {
+  text-align: center;
+  flex-grow: 1;
+  height: 50px;
+  font-size: 30px;
+  font-family: 'Times New Roman', Times, serif;
+  color: rgb(73, 107, 190);
+  background-color: #444;
+  border: 1px solid rgb(73, 107, 190);
+  border-radius: 4px;
+}
+#guess-button{
+  font-size: 30px;
+}
+/* styles for stat area */
+#stats-title{
+  position: absolute;
+  top: 5px;
+  left: 35%;
+  font-size: 30px;
+}
+.stats-area1 {
+  display: block;
+  position: absolute;
+  width: 170px;
+  bottom: 30%;
+  left: 20%;
+  border: 2px solid rgb(73, 107, 190);
+  border-radius: 4px;
+  z-index: 9;
+}
+.stats-area2 {
+  display: block;
+  position: absolute;
+  width: 170px;
+  bottom: 30%;
+  right: 20%;
+  border: 2px solid rgb(73, 107, 190);
+  border-radius: 4px;
+  z-index: 9;
+}
+.options-area {
+  display: block;
+  position: absolute;
+  width: 400px;
+  bottom: 30%;
+  left: 37%;
+  border: 2px solid rgb(73, 107, 190);
+  border-radius: 4px;
+  z-index: 9;
+}
+/*styles for the game over popup */
+#end-close-button{
+  position: absolute;
+  bottom: 5px;
+  left: 40%;
+  font-size: 20px;
+}
+#game-over-title{
+  position: absolute;
+  text-align: center;
+  top: 5px;
+  left: 25%;
+  font-size: 30px;
+}
+.end-game-popup {
+  display: none;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 33%;
+  width: 20em;
+  border: 2px solid rgb(73, 107, 190);
+  border-radius: 4px;
+  z-index: 9;
+}
+/*styles for the help popup */
+#close-button{
+  position: absolute;
+  bottom: 5px;
+  left: 40%;
+  font-size: 20px;
+}
+#help-title{
+  position: absolute;
+  top: 5px;
+  left: 25%;
+  font-size: 30px;
+}
+.help-popup {
+  display: none;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 33%;
+  width: 20em;
+  border: 2px solid rgb(73, 107, 190);
+  border-radius: 4px;
+  z-index: 9;
+}
+/* general element themes */
+.button{
+  font-family: 'Times New Roman', Times, serif;
+  color: rgb(73, 107, 190);
+  background-color: #444;
+  border: 1px solid rgb(73, 107, 190);
+  border-radius: 4px;
+}
+button:hover{
+  opacity: 0.9;
+}
+.label{
+  font-family: 'Times New Roman', Times, serif;
+  color: rgb(73, 107, 190);
+  text-align: center;
+}
+.info-container {
+  max-width: 500px;
+  padding: 10px;
+  color: rgb(73, 107, 190);
+  background-color: #444;
+}
+input[type="radio"] {
+  appearance: none;
+  background-color: #444;
+  margin: 3.5px;
+  font: inherit;
+  color: currentColor;
+  width: 1.15em;
+  height: 1.15em;
+  border-radius: 4px;
+  border: 0.15em double currentColor;
+  transform: translateY(-0.075em);
+  display: grid;
+  place-content: center;
+}
+input[type="radio"]::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  background-color: rgb(73, 107, 190);
+}
+input[type="radio"]:checked::before {
+  transform: scale(1);
+}
+.form-control + .form-control {
+  margin-top: 1em;
+}

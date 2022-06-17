@@ -147,13 +147,14 @@ function gameOver() {
     document.getElementById("end-mode").innerHTML = "- Mode: " + mode;
     document.getElementById("end-word").innerHTML = "- Word: " + word;
     document.getElementById("end-word-length").innerHTML = "- Word length: " + word.length;
-    document.getElementById("end-guesses").innerHTML = "- Gusses: " + guesses;
+    document.getElementById("end-guesses").innerHTML = "- Guesses: " + guesses;
     document.getElementById("end-lives").innerHTML = "- Lives: " + lives;
     document.getElementById("game-over").style.display = "block";
 }
 
 // allows you to not think about what you need to update
 function updateStats(){
+    document.getElementById("used-letters").innerHTML = usedLetters;
     document.getElementById("stats-guesses").innerHTML = "- Guesses: " + guesses;
     document.getElementById("stats-word-length").innerHTML = "- Word length: " + word.length;
     document.getElementById("stats-lives").innerHTML = "- Lives: " + lives;
