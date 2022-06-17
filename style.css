@@ -25,6 +25,8 @@ body {
   #title {
     position: fixed;
     font-size: 50px;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     color: rgb(73, 107, 190);
   }
@@ -43,11 +45,13 @@ body {
 
   #play-button{
     position: absolute;
-    left: 40.5%;
+    margin-left: auto;
+    margin-right: auto;
     top: 20%;
     text-align: center;
     width: 300px;
     font-size: 50px;
+    border: 2px solid rgb(73, 107, 190);
   }
 
   #word-view{
@@ -139,6 +143,33 @@ body {
     bottom: 30%;
     left: 37%;
     border: 2px solid rgb(73, 107, 190);
+    border-radius: 1px;
+    z-index: 9;
+  }
+  /*styles for the game over popup */
+  #end-close-button{
+    position: absolute;
+    bottom: 5px;
+    left: 40%;
+    font-size: 20px;
+  }
+
+  #game-over-title{
+    position: absolute;
+    text-align: center;
+    top: 5px;
+    left: 25%;
+    font-size: 30px;
+  }
+
+  .end-game-popup {
+    display: none;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 33%;
+    width: 20em;
+    border: 2px solid rgb(73, 107, 190);
     border-radius: 4px;
     z-index: 9;
   }
@@ -162,9 +193,10 @@ body {
   .help-popup {
     display: none;
     position: absolute;
-    width: 300px;
-    bottom: 30%;
-    left: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 33%;
+    width: 20em;
     border: 2px solid rgb(73, 107, 190);
     border-radius: 4px;
     z-index: 9;

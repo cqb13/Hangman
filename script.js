@@ -93,6 +93,10 @@ function wordReplace(){
         }
         hiddenWord = hiddenWord.join('');
     }
+
+    if (hiddenWord == word){
+        gameOver(endCondition = 0);
+    }
     document.getElementById("word-view").innerHTML = hiddenWord;
 }
 
@@ -131,14 +135,21 @@ function guessCheck(){
 // manages what happens when the game ends
 function gameOver() {
     if (endCondition == 0){
-        console.log("you won!");
+        endCondition = "You won!";
     } else if (endCondition = 1){
-        console.log("you ran out of lives")
+        endCondition = "You ran out of lives";
     } else if (endCondition = 2){
-        console.log("you gussed the wrong word")
+        endCondition = "You gussed the wrong word";
     } else {
-        console.log("you gave up");
+        endCondition = "You gave up";
     }
+    document.getElementById("game-over-title").innerHTML = endCondition;
+    document.getElementById("end-mode").innerHTML = "- Mode: " + mode;
+    document.getElementById("end-word").innerHTML = "- Word: " + word;
+    document.getElementById("end-word-length").innerHTML = "- Word length: " + word.length;
+    document.getElementById("end-guesses").innerHTML = "- Gusses: " + guesses;
+    document.getElementById("end-lives").innerHTML = "- Lives: " + lives;
+    document.getElementById("game-over").style.display = "block";
 }
 
 // allows you to not think about what you need to update
