@@ -6,7 +6,6 @@ body {
   background-color: #333;
   font-family: 'Times New Roman', Times, serif;
 }
-
 /*styles for main game */
 #game-container {
   width: 80%;
@@ -33,13 +32,13 @@ body {
   position: absolute;
   width: 10%;
   left: 0%;
-  font-size: 20px;
+  font-size: 125%;
 }
 #help-button{
   position: absolute;
   width: 10%;
   right: 0%;
-  font-size: 20px;
+  font-size: 125%;
 }
 #play-button{
   position: absolute;
@@ -48,7 +47,7 @@ body {
   top: 20%;
   text-align: center;
   width: 20%;
-  font-size: 50px;
+  font-size: 312.5%;
   border: 2px solid rgb(73, 107, 190);
 }
 #word-view{
@@ -59,7 +58,7 @@ body {
   bottom: 15.5%;
   width: 78%;
   height: 6%;
-  font-size: 40px;
+  font-size: 250%;
   color: rgb(73, 107, 190);
   border-radius: 4px;
   border: 1px solid rgb(73, 107, 190);
@@ -72,7 +71,7 @@ body {
   bottom: 9.5%;
   width: 78%;
   height: 5%;
-  font-size: 30px;
+  font-size: 187.5%;
   color: rgb(73, 107, 190);
   border-radius: 4px;
   border: 1px solid rgb(73, 107, 190);
@@ -89,8 +88,8 @@ body {
 #guess-input {
   text-align: center;
   flex-grow: 1;
-  height: 50px;
-  font-size: 30px;
+  height: 312.5%;
+  font-size: 187.5%;
   font-family: 'Times New Roman', Times, serif;
   color: rgb(73, 107, 190);
   background-color: #444;
@@ -98,14 +97,14 @@ body {
   border-radius: 4px;
 }
 #guess-button{
-  font-size: 30px;
+  font-size: 187.5%;
 }
 /* styles for stat area */
 #stats-title{
   position: absolute;
   top: 0.5%;
   left: 35%;
-  font-size: 30px;
+  font-size: 187.5%;
 }
 .stats-area1 {
   display: block;
@@ -181,14 +180,14 @@ body {
   text-align: center;
   top: 0.5%;
   left: 25%;
-  font-size: 30px;
+  font-size: 187.5%;
 }
 .popup-close{
   position: absolute;
   text-align: center;
   bottom: 1%;
   left: 38%;
-  font-size: 20px;
+  font-size: 125%;
 }
 input[type="button"]{
   font-family: 'Times New Roman', Times, serif;
