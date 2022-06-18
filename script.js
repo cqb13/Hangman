@@ -59,7 +59,6 @@ function start(){
         mode = "normal";
     }
     genWord(mode);
-    console.log(word);
     wordReplace(hiddenWord);
     updateStats();
 }
