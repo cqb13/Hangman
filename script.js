@@ -168,4 +168,5 @@ function reset(){
     document.getElementById("stats-lives").innerHTML = "- Lives: N/A";
     document.getElementById("word-view").innerHTML = "Word";
     document.getElementById("used-letters").innerHTML = "Used Letters";
+    document.getElementById("guess-input").value = "";
 }
