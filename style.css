@@ -10,8 +10,8 @@ body {
 /*styles for main game */
 #game-container {
   width: 80%;
-  max-width: 1200px;
-  max-height: 800px;
+  max-width: 100%;
+  max-height: 100%;
   position: absolute;
 }
 #game-container div {
@@ -23,7 +23,7 @@ body {
 }
 #title {
   position: absolute;
-  font-size: 50px;
+  font-size: 370%;
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -31,14 +31,14 @@ body {
 }
 #github-link{
   position: absolute;
-  width: 8em;
-  left: 0px;
+  width: 10%;
+  left: 0%;
   font-size: 20px;
 }
 #help-button{
   position: absolute;
-  width: 8em;
-  right: 0px;
+  width: 10%;
+  right: 0%;
   font-size: 20px;
 }
 #play-button{
@@ -47,7 +47,7 @@ body {
   margin-right: auto;
   top: 20%;
   text-align: center;
-  width: 300px;
+  width: 20%;
   font-size: 50px;
   border: 2px solid rgb(73, 107, 190);
 }
@@ -57,9 +57,8 @@ body {
   margin-left: auto;
   margin-right: auto;
   bottom: 15.5%;
-  max-width: 1200px;
-  width: 80%;
-  height: 50px;
+  width: 78%;
+  height: 6%;
   font-size: 40px;
   color: rgb(73, 107, 190);
   border-radius: 4px;
@@ -71,9 +70,8 @@ body {
   margin-left: auto;
   margin-right: auto;
   bottom: 9.5%;
-  max-width: 1200px;
-  width: 80%;
-  height: 40px;
+  width: 78%;
+  height: 5%;
   font-size: 30px;
   color: rgb(73, 107, 190);
   border-radius: 4px;
@@ -82,11 +80,10 @@ body {
 }
 #guess-container {
   position: absolute;
-  padding-bottom: 30px;
+  padding-bottom: 2%;
   bottom: 0;
   background-color: #333;
-  max-width: 1200px;
-  width: 80%;
+  width: 78%;
   display: flex;
 }
 #guess-input {
@@ -106,14 +103,14 @@ body {
 /* styles for stat area */
 #stats-title{
   position: absolute;
-  top: 5px;
+  top: 0.5%;
   left: 35%;
   font-size: 30px;
 }
 .stats-area1 {
   display: block;
   position: absolute;
-  width: 170px;
+  width: 15%;
   bottom: 30%;
   margin-right: 60%;
   border: 2px solid rgb(73, 107, 190);
@@ -123,7 +120,7 @@ body {
 .stats-area2 {
   display: block;
   position: absolute;
-  width: 170px;
+  width: 15%;
   bottom: 30%;
   margin-left: 60%;
   border: 2px solid rgb(73, 107, 190);
@@ -133,6 +130,7 @@ body {
 .options-area {
   display: block;
   position: absolute;
+  scale: 50%;
   width: 40%;
   bottom: 30%;
   margin-left: auto;
@@ -142,73 +140,56 @@ body {
   z-index: 9;
 }
 /*styles for the game over popup */
-#end-close-button{
-  position: absolute;
-  bottom: 5px;
-  left: 40%;
-  font-size: 20px;
-}
-#game-over-title{
-  position: absolute;
-  text-align: center;
-  top: 5px;
-  left: 25%;
-  font-size: 30px;
-}
 .end-game-popup {
   display: none;
   position: absolute;
   margin-left: auto;
   margin-right: auto;
   bottom: 33%;
-  width: 20em;
+  width: 21%;
   border: 2px solid rgb(73, 107, 190);
   border-radius: 4px;
   z-index: 9;
 }
 /*styles for warning popup */
-#new-game-title{
-  position: absolute;
-  top: 5px;
-  left: 25%;
-  font-size: 30px;
-}
 .new-game-popup {
   display: none;
   position: absolute;
   margin-left: auto;
   margin-right: auto;
   bottom: 33%;
-  width: 20em;
+  width: 21%;
   border: 2px solid rgb(73, 107, 190);
   border-radius: 4px;
   z-index: 9;
 }
 /*styles for the help popup */
-#close-button{
-  position: absolute;
-  bottom: 5px;
-  left: 40%;
-  font-size: 20px;
-}
-#help-title{
-  position: absolute;
-  top: 5px;
-  left: 25%;
-  font-size: 30px;
-}
 .help-popup {
   display: none;
   position: absolute;
   margin-left: auto;
   margin-right: auto;
   bottom: 33%;
-  width: 20em;
+  width: 21%;
   border: 2px solid rgb(73, 107, 190);
   border-radius: 4px;
   z-index: 9;
 }
 /* general element themes */
+.popup-title{
+  position: absolute;
+  text-align: center;
+  top: 0.5%;
+  left: 25%;
+  font-size: 30px;
+}
+.popup-close{
+  position: absolute;
+  text-align: center;
+  bottom: 1%;
+  left: 38%;
+  font-size: 20px;
+}
 input[type="button"]{
   font-family: 'Times New Roman', Times, serif;
   color: rgb(73, 107, 190);

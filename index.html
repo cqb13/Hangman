@@ -52,7 +52,7 @@
   </form>
   <div class="new-game-popup" id="new-game">
     <form class="info-container">
-      <strong id="new-game-title" class="label">WARNING!</strong>
+      <strong id="new-game-title" class="popup-title">WARNING!</strong>
       <br>
       <p id="new-game-msg-1" class="info-container">If you press this a new game will start!</p>
       <p id="new-game-msg-2" class="info-container">Your stats wont save!</p>
@@ -67,7 +67,7 @@
   </div>
   <div class="end-game-popup" id="game-over">
     <form class="info-container">
-      <strong id="game-over-title" class="label">End Of Game Status</strong>
+      <strong id="game-over-title" class="popup-title">End Of Game Status</strong>
       <br>
       <p id="end-mode" class="info-container">- Game mode: Mode</p>
       <p id="end-word" class="info-container">- Word: Word</p>
@@ -75,19 +75,19 @@
       <p id="end-guesses" class="info-container">- Guesses: 0</p>
       <p id="end-lives" class="info-container">- Lives: N/A</p>
       <br>
-      <input type="button" id="end-close-button" value="Close"></input>
+      <input type="button" id="end-close-button" class="popup-close" value="Close"></input>
     </form>
   </div>
   <div class="help-popup" id="help">
     <form class="info-container">
-      <strong id="help-title" class="label">How To Play</strong>
+      <strong id="help-title" class="popup-title">How To Play</strong>
       <br>
       <p id="help-text-1" class="info-container">- Enter a letter in the input field at the bottom of the screan.</p>
       <p id="help-text-2" class="info-container">- Press the guess button or the enter key on your keyboard to submit your guess.</p>
       <p id="help-text-2" class="info-container">- If your guess is in the word, it will replace a dashed line in the hidden word.</p>
       <p id="help-text-2" class="info-container">- If your guess is not in the word, you will loose a life. You only have 12 lives.</p>
       <br>
-      <input type="button" id="close-button" value="Close"></input>
+      <input type="button" id="close-button" class="popup-close" value="Close"></input>
     </form>
   </div>
 </body>
