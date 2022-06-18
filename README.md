@@ -1,6 +1,6 @@
 <div align="center">
   <!-- Logo and Title -->
-  <h1>Hangman</h1>
+  <h1><a href="https://cqb13.github.io/Hangman/">Hangman</a></h1>
   <p>A simple website to play hangman on</p>
 
 <!-- Fancy badges -->
