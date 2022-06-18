@@ -1,12 +1,11 @@
 import {Words} from './words.js';
 
+const closeEndButton = document.getElementById("end-close-button");
 const closeHelpBUtton = document.getElementById("close-button");
 const guessButton = document.getElementById("guess-button");
 const helpButton = document.getElementById("help-button");
 const playButton = document.getElementById("play-button");
 const guess = document.getElementById("guess-input");
-const yes = document.getElementById("new-game-yes");
-const no = document.getElementById("new-game-no");
 
 let endCondition = 0;
 let usedLetters = [];
@@ -27,16 +26,11 @@ closeHelpBUtton.addEventListener("click", function(){
     document.getElementById("help").style.display = "none";
 })
 
-yes.addEventListener("click", function(){
-    start();
+closeEndButton.addEventListener("click", function(){
+    document.getElementById("game-over").style.display = "none";
 });
 
-no.addEventListener("click", function(){
-
-})
-
 // game controls
-// TODO add a warning window that tells you your game will be lost if you press play while guesses is greater than 0.
 playButton.addEventListener("click", function(){
     start();
 });
@@ -45,11 +39,8 @@ guessButton.addEventListener("click", function(){
     game();
 });
 
-/**
- * website is reloaded when any button from the popup window is pressed
- * idk how to fix, maybe offical way to make popup window???
- * maybe save all data when 1 of the windows is opend then load it after???
-*/
+
+
 guess.addEventListener('keypress', (event) => {
     if(event.key == "Enter"){
         game();
