@@ -40,12 +40,9 @@ guessButton.addEventListener("click", function(){
     game();
 });
 
-
-
-guess.addEventListener('keypress', (event) => {
-    if(event.key == "Enter"){
-        game();
-    }
+document.getElementById('guess-container').addEventListener('submit', function(event) {
+    game();
+    event.preventDefault();
 });
 
 // setup for the game
