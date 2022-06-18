@@ -29,11 +29,13 @@ body {
 }
 #github-link{
   position: absolute;
+  width: 8em;
   left: 0px;
   font-size: 20px;
 }
 #help-button{
   position: absolute;
+  width: 8em;
   right: 0px;
   font-size: 20px;
 }
@@ -202,14 +204,14 @@ body {
   z-index: 9;
 }
 /* general element themes */
-.button{
+input[type="button"]{
   font-family: 'Times New Roman', Times, serif;
   color: rgb(73, 107, 190);
   background-color: #444;
   border: 1px solid rgb(73, 107, 190);
   border-radius: 4px;
 }
-button:hover{
+input[type="button"]:hover{
   opacity: 0.9;
 }
 .label{

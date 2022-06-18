@@ -9,9 +9,9 @@
 </head>
 <body>
   <strong id="title" class = label>Hangman</strong>
-  <a href='https://github.com/cqb13' target="_blank"><button id="github-link" class="button">Github</button></a>
-  <button id="help-button" class="button">How To Play?</button>
-  <button id="play-button" class="button">Play!</button>
+  <a href='https://github.com/cqb13' target="_blank"><input type="button" id="github-link" value="Github"></input></a>
+  <input type="button" id="help-button" value="How To Play?"></input>
+  <input type="button" id="play-button" value="Play!"></input>
 
   <div class="stats-area1" id="stats">
     <form class="info-container">
@@ -52,7 +52,7 @@
   <p id="used-letters" class="label">Used Letters</p>
   <form id="guess-container">
     <input type="text" id="guess-input" placeholder="Enter a letter">
-    <button type="button" id="guess-button" class="button">Guess</button>
+    <input type="button" id="guess-button" value="Guess"></input>
   </form>
 
   <div class="new-game-popup" id="new-game">
@@ -66,8 +66,8 @@
       <input type="checkbox" id="new-game-stop" name="warning-stop" value="not again">
       <label for="new-game-stop">Dont show again</label>
       <br>
-      <input type="button" id="new-game-yes" class="button" value="Yes"></input>
-      <input type="button" id="new-game-no" class="button" value="No"></input>
+      <input type="button" id="new-game-yes" value="Yes"></input>
+      <input type="button" id="new-game-no" value="No"></input>
     </form>
   </div>
 
@@ -81,7 +81,7 @@
       <p id="end-guesses" class="info-container">- Guesses: 0</p>
       <p id="end-lives" class="info-container">- Lives: N/A</p>
       <br>
-      <input type="button" id="end-close-button" class="button" value="Close"></input>
+      <input type="button" id="end-close-button" value="Close"></input>
     </form>
   </div>
 
@@ -94,7 +94,7 @@
       <p id="help-text-2" class="info-container">- If your guess is in the word, it will replace a dashed line in the hidden word.</p>
       <p id="help-text-2" class="info-container">- If your guess is not in the word, you will loose a life. You only have 12 lives.</p>
       <br>
-      <input type="button" id="close-button" class="button" value="Close"></input>
+      <input type="button" id="close-button" value="Close"></input>
     </form>
   </div>
 
