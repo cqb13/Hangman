@@ -103,9 +103,9 @@ function game(){
     valid = guessCheck();
     if (valid != false){
         guesses += 1;
-        usedLetters.push(guess.value);
         if (!word.includes(guess.value)){
             lives -= 1;
+            usedLetters.push(guess.value);
         }
     }
     updateStats();
