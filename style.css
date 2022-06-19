@@ -88,7 +88,7 @@ body {
 #guess-input {
   text-align: center;
   flex-grow: 1;
-  height: 312.5%;
+  height: 50px;
   font-size: 187.5%;
   font-family: 'Times New Roman', Times, serif;
   color: rgb(73, 107, 190);
