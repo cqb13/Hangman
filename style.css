@@ -21,7 +21,6 @@ body {
   background-color: #333;
 }
 #title {
-  position: absolute;
   font-size: 370%;
   margin-left: auto;
   margin-right: auto;
@@ -100,12 +99,6 @@ body {
   font-size: 187.5%;
 }
 /* styles for stat area */
-#stats-title{
-  position: absolute;
-  top: 0.5%;
-  left: 35%;
-  font-size: 187.5%;
-}
 .stats-area1 {
   display: block;
   position: absolute;
@@ -138,43 +131,18 @@ body {
   border-radius: 4px;
   z-index: 9;
 }
-/*styles for the game over popup */
-.end-game-popup {
-  display: none;
-  position: absolute;
-  margin-left: auto;
-  margin-right: auto;
-  bottom: 33%;
-  width: 21%;
-  border: 2px solid rgb(73, 107, 190);
-  border-radius: 4px;
-  z-index: 9;
-}
-/*styles for warning popup */
-.new-game-popup {
-  display: none;
-  position: absolute;
-  margin-left: auto;
-  margin-right: auto;
-  bottom: 33%;
-  width: 21%;
-  border: 2px solid rgb(73, 107, 190);
-  border-radius: 4px;
-  z-index: 9;
-}
-/*styles for the help popup */
-.help-popup {
-  display: none;
-  position: absolute;
-  margin-left: auto;
-  margin-right: auto;
-  bottom: 33%;
-  width: 21%;
-  border: 2px solid rgb(73, 107, 190);
-  border-radius: 4px;
-  z-index: 9;
-}
 /* general element themes */
+.popup {
+  display: none;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 33%;
+  width: 21%;
+  border: 2px solid rgb(73, 107, 190);
+  border-radius: 4px;
+  z-index: 9;
+}
 .popup-title{
   position: absolute;
   text-align: center;
@@ -189,6 +157,12 @@ body {
   left: 38%;
   font-size: 125%;
 }
+#stats-title{
+  position: absolute;
+  top: 0.5%;
+  left: 35%;
+  font-size: 187.5%;
+}
 input[type="button"]{
   font-family: 'Times New Roman', Times, serif;
   color: rgb(73, 107, 190);
@@ -200,6 +174,7 @@ input[type="button"]:hover{
   opacity: 0.9;
 }
 .label{
+  position: absolute;
   font-family: 'Times New Roman', Times, serif;
   color: rgb(73, 107, 190);
   text-align: center;
