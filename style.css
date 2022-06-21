@@ -98,7 +98,7 @@ body {
 #guess-button{
   font-size: 187.5%;
 }
-/* styles for stat area */
+/* styles for info area */
 #stats-1 {
   width: 15%;
   bottom: 30%;
@@ -116,6 +116,7 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+/* general element themes */
 .info-display{
   display: block;
   position: absolute;
@@ -123,7 +124,6 @@ body {
   border-radius: 4px;
   z-index: 9;
 }
-/* general element themes */
 .popup {
   display: none;
   position: absolute;
