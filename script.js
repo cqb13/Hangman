@@ -6,6 +6,7 @@ const guessButton = document.getElementById("guess-button");
 const helpButton = document.getElementById("help-button");
 const playButton = document.getElementById("play-button");
 const guess = document.getElementById("guess-input");
+const newGame = document.getElementById("new game");
 
 let endCondition = 0;
 let usedLetters = [];
