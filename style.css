@@ -99,34 +99,26 @@ body {
   font-size: 187.5%;
 }
 /* styles for stat area */
-.stats-area1 {
-  display: block;
-  position: absolute;
+#stats-1 {
   width: 15%;
   bottom: 30%;
   margin-right: 60%;
-  border: 2px solid rgb(73, 107, 190);
-  border-radius: 4px;
-  z-index: 9;
 }
-.stats-area2 {
-  display: block;
-  position: absolute;
+#stats-2 {
   width: 15%;
   bottom: 30%;
   margin-left: 60%;
-  border: 2px solid rgb(73, 107, 190);
-  border-radius: 4px;
-  z-index: 9;
 }
-.options-area {
-  display: block;
-  position: absolute;
+#options {
   scale: 50%;
   width: 40%;
   bottom: 30%;
   margin-left: auto;
   margin-right: auto;
+}
+.info-display{
+  display: block;
+  position: absolute;
   border: 2px solid rgb(73, 107, 190);
   border-radius: 4px;
   z-index: 9;
