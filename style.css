@@ -34,7 +34,6 @@ body {
   text-align: center;
   width: 20%;
   font-size: 312.5%;
-  border: 2px solid rgb(73, 107, 190);
 }
 #word-view{
   position: absolute;
@@ -97,7 +96,6 @@ body {
   margin-left: 60%;
 }
 #options {
-  scale: 50%;
   width: 40%;
   bottom: 30%;
   margin-left: auto;
