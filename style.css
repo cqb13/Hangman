@@ -86,17 +86,14 @@ body {
 /* styles for info area */
 #stats-1 {
   width: 15%;
-  bottom: 30%;
   margin-right: 60%;
 }
 #stats-2 {
   width: 15%;
-  bottom: 30%;
   margin-left: 60%;
 }
 #options {
   width: 40%;
-  bottom: 30%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -106,6 +103,12 @@ body {
   position: absolute;
   border: 2px solid rgb(73, 107, 190);
   border-radius: 4px;
+  max-width: 100%;
+  padding: 10px;
+  bottom: 30%;
+  height: 28%;
+  color: rgb(73, 107, 190);
+  background-color: #444;
   z-index: 9;
 }
 .popup {
@@ -113,16 +116,19 @@ body {
   position: absolute;
   margin-left: auto;
   margin-right: auto;
-  bottom: 33%;
   width: 21%;
+  height: 50%;
+  bottom: 33%;
   border: 2px solid rgb(73, 107, 190);
   border-radius: 4px;
-  z-index: 9;
+  color: rgb(73, 107, 190);
+  background-color: #444;
+  z-index: 10;
 }
 .popup-title{
   position: absolute;
   text-align: center;
-  top: 0.5%;
+  top: 0.1%;
   left: 25%;
   font-size: 187.5%;
 }
@@ -132,6 +138,11 @@ body {
   bottom: 1%;
   left: 38%;
   font-size: 125%;
+}
+.info-list{
+  position: absolute;
+  font-size: 130%;
+  bottom: 7%;
 }
 #stats-title{
   position: absolute;
@@ -154,12 +165,6 @@ input[type="button"]:hover{
   font-family: 'Times New Roman', Times, serif;
   color: rgb(73, 107, 190);
   text-align: center;
-}
-.info-container {
-  max-width: 100%;
-  padding: 10px;
-  color: rgb(73, 107, 190);
-  background-color: #444;
 }
 input[type="radio"] {
   appearance: none;

@@ -1,3 +1,5 @@
+import { WordsSP } from './wordsSP.js';
+import { WordsLA } from './wordsLA.js';
 import {Words} from './words.js';
 
 const closeEndButton = document.getElementById("end-close-button");
@@ -6,7 +8,6 @@ const guessButton = document.getElementById("guess-button");
 const helpButton = document.getElementById("help-button");
 const playButton = document.getElementById("play-button");
 const guess = document.getElementById("guess-input");
-const newGame = document.getElementById("new game");
 
 let endCondition = 0;
 let usedLetters = [];
@@ -143,20 +144,20 @@ function gameOver() {
         endCondition = "You gave up";
     }
     document.getElementById("game-over-title").innerHTML = endCondition;
-    document.getElementById("end-mode").innerHTML = "- Mode: " + mode;
-    document.getElementById("end-word").innerHTML = "- Word: " + word;
-    document.getElementById("end-word-length").innerHTML = "- Word length: " + word.length;
-    document.getElementById("end-guesses").innerHTML = "- Guesses: " + guesses;
-    document.getElementById("end-lives").innerHTML = "- Lives: " + lives;
+    document.getElementById("end-mode").innerHTML = "Mode: " + mode;
+    document.getElementById("end-word").innerHTML = "Word: " + word;
+    document.getElementById("end-word-length").innerHTML = "Word length: " + word.length;
+    document.getElementById("end-guesses").innerHTML = "Guesses: " + guesses;
+    document.getElementById("end-lives").innerHTML = "Lives: " + lives;
     document.getElementById("game-over").style.display = "block";
 }
 
 // allows you to not think about what you need to update
 function updateStats(){
     document.getElementById("used-letters").innerHTML = usedLetters;
-    document.getElementById("stats-guesses").innerHTML = "- Guesses: " + guesses;
-    document.getElementById("stats-word-length").innerHTML = "- Word length: " + word.length;
-    document.getElementById("stats-lives").innerHTML = "- Lives: " + lives;
+    document.getElementById("stats-guesses").innerHTML = "Guesses: " + guesses;
+    document.getElementById("stats-word-length").innerHTML = "Word length: " + word.length;
+    document.getElementById("stats-lives").innerHTML = "Lives: " + lives;
 }
 
 function reset(){
@@ -164,8 +165,8 @@ function reset(){
     valid = true;
     guesses = 0;
     document.getElementById("stats-word-length").innerHTML = "- Word length: N/A";
-    document.getElementById("stats-guesses").innerHTML = "- Guesses: 0";
-    document.getElementById("stats-lives").innerHTML = "- Lives: N/A";
+    document.getElementById("stats-guesses").innerHTML = "Guesses: 0";
+    document.getElementById("stats-lives").innerHTML = "Lives: N/A";
     document.getElementById("word-view").innerHTML = "Word";
     document.getElementById("used-letters").innerHTML = "Used Letters";
     document.getElementById("guess-input").value = "";

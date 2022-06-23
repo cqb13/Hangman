@@ -4,76 +4,73 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Hangman</title>
   <script defer type="module" src="script.js"></script>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <strong id="title" class = label>Hangman</strong>
+  <h1 id="title" class = label>Hangman</h1>
   <a href='https://github.com/cqb13' target="_blank"><input type="button" id="github-link" value="Github"></input></a>
   <input type="button" id="help-button" value="How To Play?"></input>
   <input type="button" id="play-button" value="Play!"></input>
   <div class="info-display" id="stats-1">
-    <form class="info-container">
-      <strong id="stats-title" class="label">Stats</strong>
-      <br>
-      <p id="stats-word-length" class="info-container">- Word length: N/A</p>
-      <p id="stats-guesses" class="info-container">- Guesses: 0</p>
-      <p id="stats-lives" class="info-container">- Lives: N/A</p>
-    </form>
+    <h1 id="stats-title" class="label">Stats</h1>
+    <br>
+    <ul class="info-list">
+      <li id="stats-word-length">Word length: N/A</li>
+      <li id="stats-guesses">Guesses: 0</li>
+      <li id="stats-lives">Lives: N/A</li>
+    </ul>
   </div>
   <div class="info-display" id="stats-2">
-    <form class="info-container">
-      <strong id="stats-title" class="label">Stats</strong>
-      <br>
-      <p id="stats-wins" class="info-container">- Wins: 0</p>
-      <p id="stats-losses" class="info-container">- Losses: 0</p>
-      <p id="stats-ratio" class="info-container">- W/L Ratio: 0</p>
-    </form>
+    <h1 id="stats-title" class="label">Stats</h1>
+    <br>
+    <ul class="info-list">
+      <li id="stats-wins">Wins: 0</li>
+      <li id="stats-losses">Lossses: 0</li>
+      <li id="stats-ratio">W/L Ratio: 0</li>
+    </ul>
   </div>
   <div class="info-display" id="options">
-    <form class="info-container">
-      <strong id="stats-title" class="label">Options</strong>
-      <br>
-      <p>Please select a difficulty:</p>
-      <input type="radio" id="hard-mode" name="mode_selection" value="Hard">
-      <label for="hard-mode">Hard</label><br>
-      <input type="radio" id="normal-mode" name="mode_selection" value="Normal" checked="True">
-      <label for="normal-mode">Normal</label><br>
-      <input type="radio" id="easy-mode" name="mode_selection" value="Easy">
-      <label for="easy-mode">Easy</label>
-    </form>
+    <h1 id="stats-title" class="label">Options</h1>
+    <br>
+    <p>Please select a difficulty:</p>
+    <label for="hard-mode">Hard</label>
+    <input type="radio" id="hard-mode" name="mode_selection" value="Hard">
+    <label for="normal-mode">Normal</label>
+    <input type="radio" id="normal-mode" name="mode_selection" value="Normal" checked="True">
+    <label for="easy-mode">Easy</label>
+    <input type="radio" id="easy-mode" name="mode_selection" value="Easy">
   </div>
   <div id="game-container"></div>
   <p id="word-view" class="label">Word</p>
   <p id="used-letters" class="label">Used Letters</p>
-  <form id="guess-container">
+  <div id="guess-container">
     <input type="text" id="guess-input" placeholder="Enter a letter">
     <input type="button" id="guess-button" value="Guess"></input>
-  </form>
+  </div>
   <div class="popup" id="game-over">
-    <form class="info-container">
-      <strong id="game-over-title" class="popup-title">End Of Game Status</strong>
-      <br>
-      <p id="end-mode" class="info-container">- Game mode: Mode</p>
-      <p id="end-word" class="info-container">- Word: Word</p>
-      <p id="end-word-length" class="info-container">- Word length: N/A</p>
-      <p id="end-guesses" class="info-container">- Guesses: 0</p>
-      <p id="end-lives" class="info-container">- Lives: N/A</p>
-      <br>
-      <input type="button" id="end-close-button" class="popup-close" value="Close"></input>
-    </form>
+    <h1 id="game-over-title" class="popup-title">End Of Game Status</h1>
+    <br>
+    <p id="end-mode">- Game mode: Mode</p>
+    <p id="end-word">- Word: Word</p>
+    <p id="end-word-length">- Word length: N/A</p>
+    <p id="end-guesses">- Guesses: 0</p>
+    <p id="end-lives">- Lives: N/A</p>
+    <br>
+    <input type="button" id="end-close-button" class="popup-close" value="Close"></input>
   </div>
   <div class="popup" id="help">
-    <form class="info-container">
-      <strong id="help-title" class="popup-title">How To Play</strong>
-      <br>
-      <p id="help-text-1" class="info-container">- Enter a letter in the input field at the bottom of the screan.</p>
-      <p id="help-text-2" class="info-container">- Press the guess button or the enter key on your keyboard to submit your guess.</p>
-      <p id="help-text-2" class="info-container">- If your guess is in the word, it will replace a dashed line in the hidden word.</p>
-      <p id="help-text-2" class="info-container">- If your guess is not in the word, you will loose a life. You only have 12 lives.</p>
-      <br>
-      <input type="button" id="close-button" class="popup-close" value="Close"></input>
-    </form>
+    <h1 id="help-title" class="popup-title">How To Play</h1>
+    <br>
+    <ul class="info-list">
+      <li>Enter a letter in the input field at the bottom of the screan.</li>
+      <li>Press the guess button or the enter key on your keyboard to submit your guess.</li>
+      <li>If your guess is in the word, it will replace a dashed line in the hidden word.</li>
+      <li>If your guess is not in the word, you will loose a life. You only have 12 lives.</li>
+    </ul>
+    <br>
+    <input type="button" id="close-button" class="popup-close" value="Close"></input>
   </div>
 </body>
 </html>
