@@ -14,9 +14,9 @@
   <input type="button" id="help-button" value="How To Play?"></input>
   <input type="button" id="play-button" value="Play!"></input>
   <div class="info-display" id="stats-1">
-    <h1 id="stats-title" class="label">Stats</h1>
+    <h3 id="stats-title" class="label">Stats</h3>
     <br>
-    <ul class="info-list">
+    <ul class="info-list", id="info-list-1">
       <li id="stats-word-length">Word length: N/A</li>
       <li id="stats-guesses">Guesses: 0</li>
       <li id="stats-lives">Lives: N/A</li>
@@ -25,14 +25,14 @@
   <div class="info-display" id="stats-2">
     <h1 id="stats-title" class="label">Stats</h1>
     <br>
-    <ul class="info-list">
+    <ul class="info-list", id="info-list-2">
       <li id="stats-wins">Wins: 0</li>
       <li id="stats-losses">Lossses: 0</li>
       <li id="stats-ratio">W/L Ratio: 0</li>
     </ul>
   </div>
   <div class="info-display" id="options">
-    <h1 id="stats-title" class="label">Options</h1>
+    <h3 id="stats-title" class="label">Options</h3>
     <br>
     <p>Please select a difficulty:</p>
     <label for="hard-mode">Hard</label>
@@ -43,14 +43,14 @@
     <input type="radio" id="easy-mode" name="mode_selection" value="Easy">
   </div>
   <div id="game-container"></div>
-  <p id="word-view" class="label">Word</p>
-  <p id="used-letters" class="label">Used Letters</p>
+    <p id="word-view" class="label">Word</p>
+    <p id="used-letters" class="label">Used Letters</p>
   <div id="guess-container">
     <input type="text" id="guess-input" placeholder="Enter a letter">
     <input type="button" id="guess-button" value="Guess"></input>
   </div>
   <div class="popup" id="game-over">
-    <h1 id="game-over-title" class="popup-title">End Of Game Status</h1>
+    <h3 id="game-over-title" class="popup-title">End Of Game Status</h3>
     <br>
     <p id="end-mode">- Game mode: Mode</p>
     <p id="end-word">- Word: Word</p>
@@ -61,7 +61,7 @@
     <input type="button" id="end-close-button" class="popup-close" value="Close"></input>
   </div>
   <div class="popup" id="help">
-    <h1 id="help-title" class="popup-title">How To Play</h1>
+    <h3 id="help-title" class="popup-title">How To Play</h3>
     <br>
     <ul class="info-list">
       <li>Enter a letter in the input field at the bottom of the screan.</li>

@@ -88,6 +88,14 @@ body {
   width: 15%;
   margin-right: 60%;
 }
+#info-list-1{
+  position: absolute;
+  top: 20%;
+}
+#info-list-2{
+  position: absolute;
+  top: 15%;
+}
 #stats-2 {
   width: 15%;
   margin-left: 60%;
@@ -142,7 +150,6 @@ body {
 .info-list{
   position: absolute;
   font-size: 130%;
-  bottom: 7%;
 }
 #stats-title{
   position: absolute;
