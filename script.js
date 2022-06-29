@@ -42,10 +42,10 @@ guessButton.addEventListener("click", function(){
     game();
 });
 
-// TODO:make this work: try chaning to old way before stoping submit issue, also try id change
-document.getElementById('guess-input').addEventListener('submit', function(event) {
-    game();
-    event.preventDefault();
+guess.addEventListener('keypress', (event) => {
+    if(event.key == "Enter"){
+        game();
+    }
 });
 
 // setup for the game
