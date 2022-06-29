@@ -201,3 +201,18 @@ input[type="radio"]:checked::before {
 .form-control + .form-control {
   margin-top: 1em;
 }
+#hard-mode-label {
+  position: absolute;
+  top: 34%;
+  left: 6%;
+}
+#normal-mode-label {
+  position: absolute;
+  left: 6%;
+  top: 42.5%;
+}
+#easy-mode-label {
+  position: absolute;
+  left: 6%;
+  top: 52.5%;
+}
