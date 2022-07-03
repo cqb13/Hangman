@@ -118,7 +118,6 @@ function game(){
     if (lives <= 0){
         gameOver(endCondition = 1);
     }
-    valid = true;
     wordReplace(hiddenWord);
     document.getElementById("guess-input").value = "";
 }

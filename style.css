@@ -88,14 +88,6 @@ body {
   width: 15%;
   margin-right: 60%;
 }
-#info-list-1{
-  position: absolute;
-  top: 20%;
-}
-#info-list-2{
-  position: absolute;
-  top: 15%;
-}
 #stats-2 {
   width: 15%;
   margin-left: 60%;
@@ -127,11 +119,12 @@ body {
   width: 21%;
   height: 50%;
   bottom: 33%;
+  padding: 10px;
   border: 2px solid rgb(73, 107, 190);
   border-radius: 4px;
   color: rgb(73, 107, 190);
   background-color: #444;
-  z-index: 10;
+  z-index: 9;
 }
 .popup-title{
   position: absolute;
@@ -150,6 +143,15 @@ body {
 .info-list{
   position: absolute;
   font-size: 130%;
+  list-style: none;
+  margin-left: 0;
+  padding-left: 1em;
+}
+.info-list > li:before {
+  display: inline-block;
+  content: "-";
+  width: 1em;
+  margin-left: -1em;
 }
 #stats-title{
   position: absolute;
