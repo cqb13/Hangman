@@ -165,7 +165,7 @@ function reset(){
     usedLetters = [];
     valid = true;
     guesses = 0;
-    document.getElementById("stats-word-length").innerHTML = "- Word length: N/A";
+    document.getElementById("stats-word-length").innerHTML = "Word length: N/A";
     document.getElementById("stats-guesses").innerHTML = "Guesses: 0";
     document.getElementById("stats-lives").innerHTML = "Lives: N/A";
     document.getElementById("word-view").innerHTML = "Word";
