@@ -10,14 +10,16 @@ const playButton = document.getElementById("play-button");
 const guess = document.getElementById("guess-input");
 
 let endCondition = 0;
+let usedLettersFull = [];
 let usedLetters = [];
-let valid = true;
 let guesses = 0;
 let hiddenWord;
 let lives;
 let mode;
 let word;
 
+// TODO: check if vlaid var is still needed because false is now being returned instead of valid
+// TODO: make the play button change to a new game / reset button when a game is running
 
 // utility controls
 helpButton.addEventListener("click", function(){
@@ -103,7 +105,8 @@ function wordReplace(){
 
 // controls the flow of the game
 function game(){
-    valid = guessCheck();
+    let valid = guessCheck();
+    usedLettersFull.push(guess.value);
     if (valid != false){
         guesses += 1;
         if (!word.includes(guess.value)){
@@ -120,16 +123,16 @@ function game(){
     document.getElementById("guess-input").value = "";
 }
 
-// checks that your guess is 1 character long and is a letter
-// if statement does not end in false return because full word check will be added after
+// checks that your guess is 1 character long, is a letter, not used
 function guessCheck(){
-    if ((guess.value).length <= 1){
-        for (var i = 0; i < usedLetters.length; i++){
-            if (guess.value == usedLetters[i]){
-                valid = false;
-                return valid;
+    if ((guess.value).length <= 1 && isNaN(guess.value)){
+        for (var i = 0; i < usedLettersFull.length; i++){
+            if (guess.value == usedLettersFull[i]){
+                return false;
             }
         }
+    } else {
+        return false;
     }
 }
 
@@ -162,8 +165,8 @@ function updateStats(){
 }
 
 function reset(){
+    usedLettersFull = [];
     usedLetters = [];
-    valid = true;
     guesses = 0;
     document.getElementById("stats-word-length").innerHTML = "Word length: N/A";
     document.getElementById("stats-guesses").innerHTML = "Guesses: 0";
