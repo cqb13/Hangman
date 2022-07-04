@@ -36,13 +36,22 @@
   <div class="info-display" id="options">
     <h3 id="stats-title" class="label">Options</h3>
     <br>
+    <br>
     <p>Please select a difficulty:</p>
-    <input type="radio" id="hard-mode" name="mode_selection" value="Hard">
-    <label for="hard-mode" id="hard-mode-label">Hard</label>
-    <input type="radio" id="normal-mode" name="mode_selection" value="Normal" checked="True">
-    <label for="normal-mode" id="normal-mode-label">Normal</label>
-    <input type="radio" id="easy-mode" name="mode_selection" value="Easy">
-    <label for="easy-mode" id="easy-mode-label">Easy</label>
+    <label class="radio-btn">
+      <input type="radio" id="hard-mode" name="mode_selection" value="Hard">
+      <span class="checkmark"></span>
+    Hard </label>
+    <br>
+    <label class="radio-btn">
+      <input type="radio" id="normal-mode" name="mode_selection" value="Normal" checked="true">
+      <span class="checkmark"></span>
+    Normal </label>
+    <br>
+    <label class="radio-btn">
+      <input type="radio" id="easy-mode" name="mode_selection" value="Easy">
+      <span class="checkmark"></span>
+    Easy </label>
   </div>
   <div id="game-container"></div>
     <p id="word-view" class="label">Word</p>
@@ -52,7 +61,7 @@
     <input type="button" id="guess-button" value="Guess"></input>
   </div>
   <div class="popup" id="game-over">
-    <h3 id="game-over-title" class="popup-title">End Of Game Status</h3>
+    <h3 class="popup-title" id="game-over-title">End Of Game Status</h3>
     <br>
     <br>
     <ul class="info-list">
@@ -66,7 +75,7 @@
     <input type="button" id="end-close-button" class="popup-close" value="Close"></input>
   </div>
   <div class="popup" id="help">
-    <h3 id="help-title" class="popup-title">How To Play</h3>
+    <h3 class="popup-title">How To Play</h3>
     <br>
     <br>
     <ul class="info-list">
@@ -77,6 +86,19 @@
     </ul>
     <br>
     <input type="button" id="close-button" class="popup-close" value="Close"></input>
+  </div>
+  <div class="popup" id="new-game">
+    <h3 class="popup-title">Warning!</h3>
+    <br>
+    <br>
+    <ul class="info-list">
+      <li>If you press this button this game will end!</li>
+      <li>Your stats from this game will not be saved!</li>
+    </ul>
+    <br>
+    <h3 id="u-sure" class="label">Are you sure you want to end this game?</h3>
+    <input type="button" id="yes-new-game-btn" class="popup-close" value="Yes"></input>
+    <input type="button" id="no-new-game-btn" class="popup-close" value="No"></input>
   </div>
 </body>
 </html>

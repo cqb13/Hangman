@@ -7,19 +7,19 @@ const closeHelpBUtton = document.getElementById("close-button");
 const guessButton = document.getElementById("guess-button");
 const helpButton = document.getElementById("help-button");
 const playButton = document.getElementById("play-button");
+const yes = document.getElementById("yes-new-game-btn");
+const no = document.getElementById("no-new-game-btn");
 const guess = document.getElementById("guess-input");
 
 let endCondition = 0;
 let usedLettersFull = [];
 let usedLetters = [];
+let inGame = false;
 let guesses = 0;
 let hiddenWord;
 let lives;
 let mode;
 let word;
-
-// TODO: check if vlaid var is still needed because false is now being returned instead of valid
-// TODO: make the play button change to a new game / reset button when a game is running
 
 // utility controls
 helpButton.addEventListener("click", function(){
@@ -34,10 +34,17 @@ closeEndButton.addEventListener("click", function(){
     document.getElementById("game-over").style.display = "none";
     reset();
 });
-
+yes.addEventListener("click", function(){
+    document.getElementById("new-game").style.display = "none";
+    inGame = false;
+    reset();
+});
+no.addEventListener("click", function(){
+    document.getElementById("new-game").style.display = "none";
+});
 // game controls
 playButton.addEventListener("click", function(){
-    start();
+    playButtonLogic();
 });
 
 guessButton.addEventListener("click", function(){
@@ -50,9 +57,19 @@ guess.addEventListener('keypress', (event) => {
     }
 });
 
+// controls what the play button does
+function playButtonLogic(){
+    document.getElementById("play-button").value = "Reset!";
+    if (inGame == true){
+        document.getElementById("new-game").style.display = "block";
+    } else {
+        start();
+    }
+}
+
 // setup for the game
 function start(){
-    reset();
+    inGame = true;
     if (document.getElementById("hard-mode").checked){
         lives = 6;
         mode = "hard";
@@ -85,7 +102,6 @@ function genWord(mode){
 }
 
 // creates the blank word and fills word in as you guess letters
-// TODO: seperate underscore by spaces to make it easier to see location of guess
 function wordReplace(){
     for(var i = 0; i != hiddenWord.length; i++){
         hiddenWord = hiddenWord.split('');
@@ -153,6 +169,7 @@ function gameOver() {
     document.getElementById("end-guesses").innerHTML = "Guesses: " + guesses;
     document.getElementById("end-lives").innerHTML = "Lives: " + lives;
     document.getElementById("game-over").style.display = "block";
+    console.log("test");
 }
 
 // allows you to not think about what you need to update
@@ -173,4 +190,5 @@ function reset(){
     document.getElementById("word-view").innerHTML = "Word";
     document.getElementById("used-letters").innerHTML = "Used Letters";
     document.getElementById("guess-input").value = "";
+    document.getElementById("play-button").value = "Play!";
 }
